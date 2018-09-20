@@ -28,7 +28,19 @@ function draw() {
 	x3 = x3 + speedX3;
 	y3 = y3 + speedY3;
 	
-	if (x1 > width) {
+firstBall();
+secondBall();
+thirdBall();
+	
+	
+	ellipse(x1,y1, 40);
+	ellipse(x2,y2, 40);
+	ellipse(x3,y3, 40);
+	
+}
+
+function firstBall() {
+		if (x1 > width) {
 		speedX1 = speedX1* -1;
 	}
 	
@@ -41,8 +53,10 @@ function draw() {
 	if (x1 < 0) {
 		speedX1 = speedX1* -1;
 }
+}
 
-if (x2 > width) {
+function secondBall() {
+	if (x2 > width) {
 		speedX2 = speedX2* -1;
 	}
 	
@@ -55,7 +69,9 @@ if (x2 > width) {
 	if (x2 < 0) {
 		speedX2 = speedX2* -1;
 }
+}
 
+function thirdBall() {
 	if (x3 > width) {
 		speedX3 = speedX3* -1;
 	}
@@ -68,11 +84,4 @@ if (x2 > width) {
 	}
 	if (x3 < 0) {
 		speedX3 = speedX3* -1;
-}
-	
-	
-	ellipse(x1,y1, 40);
-	ellipse(x2,y2, 40);
-	ellipse(x3,y3, 40);
-	
-}
+}}
