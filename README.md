@@ -1,1 +1,1 @@
-# cphw2
+Answer: The spectrum of the dots drawn severely changes - the red, green and blue only go up to 255 so when we leave the blue at the constant number of 100, we see that our code draws the spectrum from blue to purple.
